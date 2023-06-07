@@ -19,12 +19,12 @@ public struct ReuseIdentifierMacro: MemberMacro {
         providingMembersOf declaration: some DeclGroupSyntax,
         in context: some MacroExpansionContext
     ) throws -> [SwiftSyntax.DeclSyntax] {
-        guard let enumDecl = declaration.as(ClassDeclSyntax.self) else {
+        guard let classDecl = declaration.as(ClassDeclSyntax.self) else {
             throw ReuseIdentifierError.onlyApplicableToClass
         }
 
         let reuseID = try VariableDeclSyntax("static var reuseID: String") {
-            StringLiteralExprSyntax(content: enumDecl.identifier.text)
+            StringLiteralExprSyntax(content: classDecl.identifier.text)
         }
 
         return [
