@@ -12,6 +12,6 @@ class CarouselCollectionViewCell: UICollectionViewCell {}
 
 collectionView.register(
     CarouselCollectionViewCell.self,
-    forCellWithReuseIdentifier: CarouselCollectionViewCell.reuseID
+    forCellWithReuseIdentifier: CarouselCollectionViewCell.reuseIdentifier
 )
 ```

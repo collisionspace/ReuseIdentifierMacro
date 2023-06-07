@@ -23,7 +23,7 @@ public struct ReuseIdentifierMacro: MemberMacro {
             throw ReuseIdentifierError.onlyApplicableToClass
         }
 
-        let reuseID = try VariableDeclSyntax("static var reuseID: String") {
+        let reuseID = try VariableDeclSyntax("static var reuseIdentifier: String") {
             StringLiteralExprSyntax(content: classDecl.identifier.text)
         }
 

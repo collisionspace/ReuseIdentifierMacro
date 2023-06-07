@@ -18,7 +18,7 @@ final class ReuseIdentifierTests: XCTestCase {
             expandedSource: """
 
             class CarouselCollectionViewCell {
-                static var reuseID: String {
+                static var reuseIdentifier: String {
                     "CarouselCollectionViewCell"
                 }
             }

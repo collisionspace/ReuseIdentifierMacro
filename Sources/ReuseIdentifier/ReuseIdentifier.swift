@@ -4,8 +4,8 @@
 ///     @ReuseIdentifier
 ///     class CarouselCollectionViewCell: UICollectionViewCell {}
 ///
-///     CarouselCollectionViewCell.reuseID
+///     CarouselCollectionViewCell.reuseIdentifier
 ///
 /// produces a static String,`CarouselCollectionViewCell`
-@attached(member, names: named(reuseID))
+@attached(member, names: named(reuseIdentifier))
 public macro ReuseIdentifier() = #externalMacro(module: "ReuseIdentifierMacros", type: "ReuseIdentifierMacro")
