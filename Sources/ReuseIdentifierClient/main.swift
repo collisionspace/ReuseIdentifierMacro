@@ -1,6 +1,6 @@
 import ReuseIdentifier
 
 @ReuseIdentifier
-class CarouselCollectionViewCell: UICollectionViewCell {}
+class CarouselCollectionViewCell {}
 
 let reuseID = CarouselCollectionViewCell.reuseID
