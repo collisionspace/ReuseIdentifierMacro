@@ -1,5 +1,5 @@
 # ReuseIdentifierMacro
-A Reuse Identifier Macro that useful in generation of a reuse id for your UICollectionViewCells and UITableViewCells
+A Reuse Identifier Macro that is useful in generation of a reuse id for your UICollectionViewCells and UITableViewCells
 
 To use within your projects, you'll need SPM and import this package in.
 
